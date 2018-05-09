@@ -47,8 +47,8 @@ export default () => (
       ))}
     </div>
     <div className="row mt-3">
-      {universes.map(({ universe }) => (
-        <Universe key={universe.id} universe={universe} />
+      {universes.map(({ id, name, img, description }) => (
+        <Universe key={id} name={name} img={img} desc={description} />
       ))}
     </div>
   </div>

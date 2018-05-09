@@ -6,19 +6,21 @@ import './styles.scss';
 
 type Props = {
   key: string,
-  universe: Object
+  name: string,
+  img: string,
+  desc: string
 };
 
-export default ({ key, universe }: Props) => (
-  <div key={universe.id} className="col-sm-4 col-md-3">
-    <div className="product" id={key}>
-      <img src={universe.image} alt={universe.name} />
+export default ({ key, name, img, desc }: Props) => (
+  <div key={key} className="col-sm-4 col-md-3">
+    <div className="product">
+      <img src={img} alt={name} />
       <div className="image_overlay" />
       <div className="view_details"> {'Enter'} </div>
       <div className="stats">
         <div className="stats-container">
-          <span className="product_name">{universe.name}</span>
-          <p>{universe.description}</p>
+          <span className="product_name">{name}</span>
+          <p>{desc}</p>
         </div>
       </div>
     </div>
