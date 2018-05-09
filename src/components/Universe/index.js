@@ -12,7 +12,7 @@ type Props = {
 };
 
 export default ({ key, name, img, desc }: Props) => (
-  <div key={key} className="col-sm-4 col-md-3">
+  <div id={key} className="col-sm-4 col-md-3">
     <div className="product">
       <img src={img} alt={name} />
       <div className="image_overlay" />
