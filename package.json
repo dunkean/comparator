@@ -170,6 +170,7 @@
     },
     "rules": {
       "global-require": "off",
+      "linebreak-style": "off",
       "no-console": "off",
       "no-underscore-dangle": "off",
       "function-paren-newline": "off",
@@ -283,6 +284,7 @@
     "babel-plugin-lodash": "^3.3.2",
     "babel-plugin-transform-remove-console": "^6.9.2",
     "better-npm-run": "^0.1.0",
+    "bootstrap": "^4.1.1",
     "chalk": "^2.4.1",
     "compression": "^1.7.2",
     "cross-spawn": "^6.0.5",
@@ -307,6 +309,7 @@
     "react-router-config": "^1.0.0-beta.4",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^5.0.0-alpha.8",
+    "reactstrap": "^6.0.1",
     "redux": "^4.0.0",
     "redux-thunk": "^2.2.0",
     "serialize-javascript": "^1.5.0",

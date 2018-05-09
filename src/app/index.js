@@ -22,6 +22,10 @@ const App = ({ route }: Props) => (
     <hr />
     {/* child routes won't render without this */}
     {renderRoutes(route.routes)}
+    <hr />
+    <div className={styles.footer}>
+      <h1>test</h1>
+    </div>
   </div>
 );
 

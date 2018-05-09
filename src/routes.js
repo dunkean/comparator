@@ -4,14 +4,19 @@
 import { fetchUsersIfNeeded } from './actions/users';
 import { fetchUserIfNeeded } from './actions/user';
 import App from './app';
-import { asyncHome, asyncUserInfo, NotFound } from './pages';
+import { asyncHome, asyncUserInfo, NotFound, Landing } from './pages';
 
 export default [
   {
     component: App,
     routes: [
       {
-        path: '/',
+        path: '/Landing',
+        exact: true,
+        component: Landing
+      },
+      {
+        path: '/List',
         exact: true,
         component: asyncHome, // Add your route here
         loadData: () => [
@@ -24,6 +29,11 @@ export default [
         component: asyncUserInfo,
         loadData: ({ params }: Object) => [fetchUserIfNeeded(params.id)]
       },
+      // {
+      //   path: '/Universe/:id',
+      //   component: Universe,
+      //   loadData: ({ params }: Object) => [fetchUserIfNeeded(params.id)]
+      // },
       {
         component: NotFound
       }

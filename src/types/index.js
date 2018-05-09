@@ -20,6 +20,15 @@ export type UserInfo = {
   }
 };
 
+export type UniverseInfo = {
+  +[id: string]: {
+    +name: string,
+    +image: string,
+    +price: string,
+    +description: string
+  }
+};
+
 // State
 type $ExtractFunctionReturn = <V>(v: (...args: any) => V) => V; // eslint-disable-line no-undef
 export type ReduxState = $ObjMap<Reducers, $ExtractFunctionReturn>; // eslint-disable-line no-undef

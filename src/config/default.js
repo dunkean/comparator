@@ -5,12 +5,12 @@ module.exports = {
   port: process.env.PORT,
   app: {
     htmlAttributes: { lang: 'en' },
-    title: 'React Cool Starter',
-    titleTemplate: 'React Cool Starter - %s',
+    title: 'Kitty Doggy Food',
+    titleTemplate: 'Kitty Doggy - %s',
     meta: [
       {
-        name: 'description',
-        content: 'The best react universal starter boilerplate in the world.'
+        name: 'A comparator site for kitty doggy food',
+        content: "The best site for your best friend's food."
       }
     ]
   }
