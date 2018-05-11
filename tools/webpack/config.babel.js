@@ -110,14 +110,14 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        // Eslint
-        enforce: 'pre',
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'eslint',
-        options: { failOnError: eslint }
-      },
+      // {
+        // //Eslint
+        // enforce: 'pre',
+        // test: /\.jsx?$/,
+        // exclude: /node_modules/,
+        // loader: 'eslint',
+        // options: { failOnError: eslint }
+      // },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,

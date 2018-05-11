@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* eslint-disable max-len*/
 /* @flow */
 
 import path from 'path';

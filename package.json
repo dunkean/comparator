@@ -169,6 +169,7 @@
       "es6": true
     },
     "rules": {
+	  "max-len": "off",
       "global-require": "off",
       "linebreak-style": "off",
       "no-console": "off",
@@ -226,6 +227,7 @@
     ],
     "rules": {
       "string-quotes": "single",
+	  "max-line-length": 160,
       "selector-pseudo-class-no-unknown": [
         true,
         {
