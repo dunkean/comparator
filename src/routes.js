@@ -11,7 +11,7 @@ export default [
     component: App,
     routes: [
       {
-        path: '/Landing',
+        path: '/',
         exact: true,
         component: Landing
       },

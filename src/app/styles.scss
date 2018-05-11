@@ -5,6 +5,12 @@ body {
   font-family: 'Helvetica-Light', Helvetica, Arial, sans-serif;
 }
 
+.img {
+  float: left;
+  height: 70px;
+  margin-right: 1em;
+}
+
 .App {
   color: $color-white;
 

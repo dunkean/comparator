@@ -1,18 +1,16 @@
 /* @flow */
 
 import React from 'react';
-
+import { Col } from 'reactstrap';
 import './styles.scss';
 
 type Props = {
-  key: string,
   name: string,
-  img: string,
-  desc: string
+  img: string
 };
 
-export default ({ key, name, img, desc }: Props) => (
-  <div id={key} className="col-sm-4 col-md-3">
+export default ({ name, img }: Props) => (
+  <Col sm="4" md="3">
     <div className="product">
       <img src={img} alt={name} />
       <div className="image_overlay" />
@@ -20,9 +18,9 @@ export default ({ key, name, img, desc }: Props) => (
       <div className="stats">
         <div className="stats-container">
           <span className="product_name">{name}</span>
-          <p>{desc}</p>
+          <p>Food...</p>
         </div>
       </div>
     </div>
-  </div>
+  </Col>
 );
